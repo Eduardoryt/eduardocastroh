@@ -1,0 +1,125 @@
+.rsa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f0f2f5;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  
+  .container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+  }
+  
+  .keys-section,
+  .text-section {
+    margin-bottom: 1.5rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .key-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 1rem;
+  }
+  
+  .key-box {
+    width: 48%; /* Para pantallas más grandes */
+    text-align: left;
+  }
+  
+  .key-box pre {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #000;
+    max-height: 150px;
+    overflow-y: auto;
+  }
+  
+  textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    margin-bottom: 1.5rem;
+    resize: vertical; /* Permitir cambiar el tamaño verticalmente */
+  }
+  
+  .action-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    margin: 0.5rem; /* Espacio entre botones */
+  }
+  
+  .action-button:hover {
+    background-color: #0056b3;
+  }
+  
+  .cipher-text,
+  .decrypted-text {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #000;
+    margin-top: 1rem;
+    max-height: 100px;
+    overflow-y: auto;
+  }
+  
+  @media (max-width: 768px) {
+    .key-box {
+      width: 100%; /* Asegurar que las columnas tomen el 100% en pantallas pequeñas */
+      margin-bottom: 20px; /* Espacio entre las secciones */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      padding: 1rem; /* Reducir el padding en pantallas muy pequeñas */
+    }
+  
+    h1 {
+      font-size: 1.5rem; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+    }
+  
+    h2 {
+      font-size: 1.2rem; /* Ajustar el tamaño de los subtítulos */
+    }
+  
+    .action-button {
+      font-size: 0.9rem; /* Reducir el tamaño de las letras en los botones */
+    }
+  }
+  

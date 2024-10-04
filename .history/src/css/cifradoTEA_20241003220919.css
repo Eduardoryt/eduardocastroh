@@ -1,0 +1,74 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.form-container {
+  background: #f9f9f9;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 400px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.title {
+  margin-left: 10px;
+  font-size: 1.5em;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.p-inputtext {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+.btn-cifrar,
+.btn-descifrar {
+  background-color: #4CAF50; /* Verde */
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.btn-cifrar:hover,
+.btn-descifrar:hover {
+  background-color: #45a049;
+}
+
+.result-container {
+  margin-top: 20px;
+}
+
+.resultado-container {
+  margin-top: 10px;
+}
+
+.resultado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}

@@ -1,0 +1,67 @@
+.app-container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    margin-bottom: 5px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.result-container {
+    margin-top: 20px;
+}
+
+.resultado-container {
+    margin-top: 10px;
+}
+
+.resultado {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-icon {
+    margin-left: 10px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color: blue;
+    text-decoration: underline;
+}
+
+.btn-cifrar,
+.btn-descifrar {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+}
+
+.btn-cifrar {
+    background-color: #4CAF50; /* Verde */
+}
+
+.btn-descifrar {
+    background-color: #2196F3; /* Azul */
+}

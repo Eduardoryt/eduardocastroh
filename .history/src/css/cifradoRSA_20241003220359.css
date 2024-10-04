@@ -1,0 +1,140 @@
+/* cifradoRSA.css */
+.app-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #e9ecef; /* Color de fondo más suave */
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+    text-align: center;
+    max-width: 800px;
+    width: 90%;
+    box-sizing: border-box;
+}
+
+h1, h2 {
+    color: #343a40; /* Color de texto más oscuro */
+    margin: 0 0 1rem;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1); /* Sombra suave para los encabezados */
+}
+
+h1 {
+    font-size: 2.8rem; /* Aumento en el tamaño del encabezado principal */
+}
+
+h2 {
+    font-size: 2rem; /* Aumento en el tamaño de subtítulos */
+}
+
+.key-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.key-box {
+    background-color: #f1f3f5; /* Color de fondo más claro */
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 0.5rem;
+    text-align: left;
+    transition: transform 0.2s; /* Efecto de transformación */
+}
+
+.key-box:hover {
+    transform: scale(1.02); /* Aumento leve al pasar el ratón */
+}
+
+.key-display {
+    white-space: pre-wrap; /* Mantiene el formato */
+    overflow: auto;
+    max-height: 120px; /* Aumento de altura para mejor visualización */
+}
+
+.text-section {
+    margin-top: 1rem;
+}
+
+textarea {
+    width: 100%;
+    padding: 12px; /* Aumento de padding para mejor experiencia */
+    margin-top: 0.5rem;
+    border-radius: 5px;
+    color: #333;
+    font-weight: 700;
+    border: 1px solid #ccc;
+    background-color: #f0f2f5;
+    resize: vertical;
+    transition: border-color 0.3s; /* Transición suave para el borde */
+}
+
+textarea:focus {
+    border-color: #007bff; /* Color del borde al enfocar */
+    outline: none; /* Elimina el borde del navegador */
+}
+
+.action-button, .generate-button {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 25px; /* Aumento de tamaño del botón */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1rem; /* Aumento del tamaño de la fuente */
+    transition: background-color 0.3s ease, transform 0.2s; /* Transiciones suaves */
+    margin-top: 1rem;
+}
+
+.action-button:hover, .generate-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05); /* Efecto de aumento al pasar el ratón */
+}
+
+.cipher-text, .decrypted-text {
+    background-color: #f8f9fa;
+    padding: 12px; /* Aumento de padding */
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-top: 0.5rem;
+    text-align: left; /* Alineación a la izquierda */
+    white-space: pre-wrap; /* Mantiene el formato */
+    overflow: auto; /* Permite desplazamiento si es necesario */
+}
+
+@media (max-width: 768px) {
+    .key-container {
+        flex-direction: column; /* Cambia a columna en pantallas pequeñas */
+    }
+
+    .key-box {
+        margin: 0.5rem 0; /* Espaciado entre cajas */
+    }
+}
+
+@media (max-width: 576px) {
+    .form-container {
+        padding: 1.5rem; /* Ajusta el padding en pantallas pequeñas */
+    }
+
+    h1 {
+        font-size: 2.2rem; /* Ajusta el tamaño del encabezado */
+    }
+
+    h2 {
+        font-size: 1.7rem; /* Ajusta el tamaño del encabezado */
+    }
+
+    .action-button, .generate-button {
+        font-size: 1rem; /* Ajusta el tamaño de los botones */
+    }
+}

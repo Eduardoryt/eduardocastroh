@@ -1,0 +1,90 @@
+/* cifladoWhirlpool.css */
+
+.app-container {
+    max-width: 800px; /* Ancho máximo del contenedor principal */
+    margin: 0 auto; /* Centrar el contenedor */
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+.form-container {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.text-section {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 10px;
+    display: block;
+    color: #444;
+}
+
+textarea,
+input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 1em;
+    resize: vertical; /* Permitir que el textarea se redimensione verticalmente */
+}
+
+.action-button,
+.copy-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #4caf50;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s;
+    width: 100%; /* Botones ocupan el ancho completo */
+}
+
+.action-button:hover,
+.copy-button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el ratón */
+}
+
+.copy-button {
+    background-color: #007bff; /* Color del botón de copiar */
+}
+
+.copy-button:hover {
+    background-color: #0056b3; /* Cambio de color al pasar el ratón */
+}
+
+.hashed-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.result {
+    margin: 10px 0;
+    color: #333;
+}
+
+/* Medidas para pantallas más grandes */
+@media (min-width: 600px) {
+    .text-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

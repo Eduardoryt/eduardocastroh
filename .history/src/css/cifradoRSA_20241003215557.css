@@ -1,0 +1,86 @@
+/* cifradoRSA.css */
+.rsa-container {
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    background-color: #eaeef2;
+    border-radius: 10px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.container {
+    margin-top: 20px;
+}
+
+.generate-button, .action-button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 10px 0;
+    transition: background-color 0.3s, transform 0.2s;
+    font-size: 16px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.generate-button:hover, .action-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+.keys-section, .text-section {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.key-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.key-box {
+    width: 48%;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.key-display {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+    font-size: 14px;
+}
+
+.cipher-text, .decrypted-text {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f0f8ff;
+    margin: 10px 0;
+    font-family: 'Courier New', monospace;
+    font-size: 14px;
+}

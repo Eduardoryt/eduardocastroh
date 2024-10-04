@@ -1,0 +1,24 @@
+.key-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.key-box {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    flex: 1;
+    margin: 0 0.5rem;
+    text-align: left;
+    max-width: 100%; /* Asegura que no supere el ancho del contenedor padre */
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+.key-display {
+    white-space: pre-wrap; /* Mantiene el formato y permite el ajuste de línea */
+    overflow-wrap: break-word; /* Permite que las palabras largas se rompan */
+    overflow: auto; /* Habilita la barra de desplazamiento si es necesario */
+    max-height: 100px; /* Limita la altura */
+    padding: 0.5rem; /* Añade un poco de espacio interno */
+}

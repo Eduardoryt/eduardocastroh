@@ -1,0 +1,142 @@
+/* Estilos para el contenedor principal */
+.rsa-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100vw;
+    background-color: #f0f2f5;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 10px;
+    color: #333;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+/* Sección de claves */
+.keys-section {
+    margin-bottom: 1.5rem;
+}
+
+.key-container {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.key-box {
+    background-color: #f8f9fa;
+    padding: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    flex-basis: 48%;
+    text-align: left;
+}
+
+.key-box h3 {
+    margin-bottom: 0.5rem;
+}
+
+/* Sección de texto */
+.text-section {
+    margin-top: 1.5rem;
+}
+
+.text-section textarea {
+    width: 90%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+/* Botones */
+.generate-button,
+.action-button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    width: 30%;
+    margin-top: 1rem;
+}
+
+.generate-button:hover,
+.action-button:hover {
+    background-color: #0056b3;
+}
+
+/* Resultados */
+.cipher-text,
+.decrypted-text {
+    background-color: #f8f9fa;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    color: #000;
+    margin-top: 1rem;
+    max-height: 100px;
+    overflow-y: auto;
+}
+
+/* Media Queries para hacer el diseño responsivo */
+@media (max-width: 768px) {
+    .key-container {
+        flex-direction: column;
+    }
+
+    .key-box {
+        margin-bottom: 10px; /* Espacio entre cajas */
+    }
+
+    .generate-button,
+    .action-button {
+        width: 100%; /* Asegurar que los botones tomen el 100% en pantallas pequeñas */
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 1rem; /* Reducir el padding en pantallas muy pequeñas */
+    }
+
+    h1 {
+        font-size: 1.8rem; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    h2 {
+        font-size: 1.5rem; /* Ajustar el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .generate-button,
+    .action-button {
+        font-size: 0.9rem; /* Reducir el tamaño de las letras en los botones */
+    }
+}
